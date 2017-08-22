@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h3= 'USERS'
+  ul
+    for user in users
+       
+       li
+         a(href="/user_name/"+user.name)= user.name
+         
+   
+  
+    

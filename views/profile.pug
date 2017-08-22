@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h3= "User details"
+ 
+  ul
+    li
+       a(href="/user_details/"+user.id)= user.id
+    li= user.name
+    li= user.gender
+    li= user.dob
+    li= user.email
+    li= user.phone 
+    
+  

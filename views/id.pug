@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h3= "User Posts"
+  ul
+   for post in posts
+    li
+      a(href="/post/"+post.id)= post.content
+         
+   
